@@ -1,0 +1,67 @@
+// Write a program that declares a variable using var, let, and const and prints the value to the console.
+
+var a = 10
+let b= 20
+const c = 30
+console.log(a)
+console.log(b)
+console.log(c)
+
+// Write a program that reassigns a value to a variable declared with let and prints the new value to the console.
+
+let a =10
+const fun =()=>{
+  a = 20
+}
+fun()
+console.log(a)
+
+// Write a program that tries to reassign a value to a variable declared with const and prints the message to the console
+
+const a =10
+const fun =()=>{
+  a = 20
+}
+fun()
+console.log(a)
+
+output : TypeError: Assignment to constant variable.
+
+// Write a program to declare a const, let, var variable within an if statement and try to access the variable outside the if block, what is the result?
+
+a = 20
+if(a>10){
+  var one = 1
+  const two = 2
+  let three = 3
+}
+
+console.log(one)
+console.log(two)
+console.log(three)
+
+
+output: for variable declared with var it will print the value, but for let and const it will give error as these two are block scope variables.
+
+// Write a program that concatenates two or more strings and prints the result to the console.
+
+str1 = "Kreeti"
+str2 ="Technologies"
+str3 = "Pvt"
+str4 = "Ltd"
+
+ans = str1.concat(" ",str2," ",str3," ",str4)
+
+console.log(ans)
+
+// Write a program that takes a string as input and prints the length of the string to the console.
+
+var inp = prompt("input any string")
+
+console.log(inp.length)
+
+// Write a program that converts a string to uppercase and prints the result to the console.
+
+let text = "Hello World!";
+let result = text.toUpperCase();
+console.log(result)
